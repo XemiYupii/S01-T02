@@ -1,4 +1,5 @@
-package exercici1;
+
+package n1exercici1;
 
 
 public class Mercat {
@@ -16,17 +17,14 @@ public class Mercat {
 		try {
 			System.out.println(venda.calcularTotal());
 		} catch (VendaBuidaException e) {
-		
 			System.out.println(e.getMessage());
 		}
 		
 		try {
 			venda.mostrarNomProductes();
 		} catch (VendaBuidaException  | IndexOutOfBoundsException e) {
-			//e.printStackTrace();
 			System.out.println(e.getMessage());
 		}
-		
 	}
 
 }
