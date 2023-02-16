@@ -20,7 +20,8 @@ public class Venda {
 		if (productes.isEmpty()) {
 			throw new VendaBuidaException ("Per fer una venda primer has d’afegir productes") ;
 		}
-		for ( int i = 0; i <= productes.size(); ++i) {   //generarà un error
+		productes.get(3);
+		for ( int i = 0; i < productes.size(); ++i) {   //generarà un error
 			System.out.println(productes.get(i).getNom());
 		}
 	}

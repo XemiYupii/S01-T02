@@ -14,6 +14,7 @@ public class Mercat {
 		venda.afegirProducte(new Producte ("tomàquets", 22d));
 		
 		
+<<<<<<< HEAD
 		try {
 			System.out.println(venda.calcularTotal());
 		} catch (VendaBuidaException e) {
@@ -28,3 +29,29 @@ public class Mercat {
 	}
 
 }
+=======
+//		try {
+//			System.out.println(venda.calcularTotal());
+//		} catch (VendaBuidaException e) {
+//		
+//			System.out.println(e.getMessage());
+//		}
+		
+		try {
+			venda.mostrarNomProductes();
+		} catch (VendaBuidaException e /* | IndexOutOfBoundsException e*/) {
+			//e.printStackTrace();
+			System.out.println(e.getMessage());
+		}
+		catch (IndexOutOfBoundsException f) {
+			System.out.println(f.getMessage());
+		}
+		
+	}
+
+}
+/*Al capturar les excepcions el k fem és que el programa segueixi funcionant.
+ * si el metode mostrarNomProducte es posés abans que el mètode
+ * calcularTotal i no capturessim l'excepció, el programa finalitzaria en el moment
+ * k es llancés l'excepcio*/
+>>>>>>> 61147b90e46c41211ba00cc91c43dfe42c96ffe0
